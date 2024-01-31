@@ -1,10 +1,10 @@
-import React from 'react'
-import styles from './tickets.module.css'
+import { TicketItem , TicketLot} from "./styled"
+
 const CssStyledListItem = ({ticket}) => {
   return (
-    <div className={styles.ticketItem}>
-         <p className={styles.ticketLlot}>{ticket}</p>
-    </div>
+    <TicketItem>
+         <TicketLot>{ticket}</TicketLot>
+    </TicketItem>
   )
 }
 

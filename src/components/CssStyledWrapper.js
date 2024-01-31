@@ -1,13 +1,13 @@
 import React from 'react'
 import CssStyledListItem from './CssStyledListItem'
-import styles from './tickets.module.css'
+import { TicketWrapper } from './styled'
 
 const CssStyledWrapper = () => {
   const tickets =[1,2,3,4,5,6]
   return (
-    <div className={styles.ticketWrapper}>
+    <TicketWrapper >
         {tickets.map((ticket) => <CssStyledListItem ticket={ticket} /> )}
-    </div>
+    </TicketWrapper>
   )
 }
 
