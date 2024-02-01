@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 
 export const TicketWrapper = styled.div`
     width: 600px;
@@ -20,6 +20,8 @@ export const TicketItem = styled.div`
     justify-content: center;
 `
 export const TicketLot = styled.p`
-    color: white;
-    font-size: 26px;
+    ${({color, fontSize}) => css`
+        color: ${color};
+        font-size: ${fontSize};
+    `}
 `

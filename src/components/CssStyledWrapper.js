@@ -6,7 +6,7 @@ const CssStyledWrapper = () => {
   const tickets =[1,2,3,4,5,6]
   return (
     <TicketWrapper >
-        {tickets.map((ticket) => <CssStyledListItem ticket={ticket} /> )}
+        {tickets.map((ticket, index) => <CssStyledListItem ticket={ticket} index={index}/> )}
     </TicketWrapper>
   )
 }
